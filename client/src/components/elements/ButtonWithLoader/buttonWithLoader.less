@@ -1,0 +1,20 @@
+@import (reference) '../../../styles/index.less';
+
+.span {
+  display: grid;
+  grid-column-gap: @size-3;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.default {
+  .btn__default;
+}
+
+.primary {
+  .btn__primary;
+
+  &--danger {
+    .btn__primary--danger;
+  }
+}
