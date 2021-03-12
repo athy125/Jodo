@@ -1,0 +1,60 @@
+@import (reference) './index.less';
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../fonts/ROBOTO-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../fonts/ROBOTO-MEDIUM.TTF') format('truetype');
+}
+
+body {
+  .milli;
+  font-family: 'roboto-regular';
+}
+
+button {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+textarea {
+  .input__default;
+  font-family: 'roboto-regular';
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:disabled {
+  background: #f2f7fa;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: @primary-color;
+}
+
+::-webkit-input-placeholder {
+  color: @gray-text-color;
+}
+::-moz-placeholder {
+  color: @gray-text-color;
+}
+:-ms-input-placeholder {
+  color: @gray-text-color;
+}
+:-moz-placeholder {
+  color: @gray-text-color;
+}
