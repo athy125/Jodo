@@ -1,0 +1,54 @@
+@import (reference) '../../../styles/index.less';
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+  position: relative;
+  grid-template-areas:
+    'head'
+    'nav'
+    'main';
+}
+
+.head {
+  padding: @size-4;
+  grid-column-gap: @size-2;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  align-items: center;
+
+  &__join {
+    .btn__primary;
+  }
+
+  &__create {
+    .btn__default;
+  }
+
+  &__settings {
+    .tera;
+    justify-self: end;
+    margin-top: 3px;
+
+    &:before {
+      .settings-icon-before;
+    }
+  }
+}
+
+.main {
+  position: absolute;
+  grid-area: main;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.loader {
+  margin-top: 30px;
+}
+
+.notFound {
+  .notFound;
+}
