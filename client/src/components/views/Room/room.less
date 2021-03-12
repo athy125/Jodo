@@ -1,0 +1,136 @@
+@import (reference) '../../../styles/index.less';
+
+.head {
+  .bottom-box-shadow-with-border;
+}
+
+.room {
+  padding: @size-4 @size-4 @size-2 @size-4;
+  display: grid;
+  grid-column-gap: @size-4;
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-areas:
+    'back  roomInfo  leave'
+    'back  roomInfo  settings';
+
+  &__back {
+    grid-area: back;
+
+    &:before {
+      .back-icon-before;
+    }
+  }
+
+  &__room-info {
+    grid-area: roomInfo;
+  }
+
+  &__join {
+    .giga;
+    grid-area: leave;
+    color: @green-color;
+
+    &:before {
+      content: '\e145';
+      font-family: 'Material Icons';
+      transform: rotate(0.03deg);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: @green-color;
+    }
+  }
+
+  &__leave {
+    .giga;
+    grid-area: leave;
+    color: @danger-color;
+
+    &:before {
+      content: '\e879';
+      font-family: 'Material Icons';
+      transform: rotate(0.03deg);
+    }
+  }
+
+  &__settings {
+    .giga;
+    grid-area: settings;
+    margin-top: 5px;
+
+    &:before {
+      .settings-icon-before;
+    }
+  }
+}
+
+.actions {
+  padding: @size-2 @size-4 @size-4 @size-4;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, max-content);
+  grid-column-gap: @size-5;
+
+  &__create {
+    .btn__default;
+    width: max-content;
+  }
+
+  &__create--disabled {
+    color: @gray-text-color;
+    border: solid 1px @light-border-color;
+  }
+
+  &__search,
+  &__view,
+  &__sort {
+    .giga;
+    font-family: 'roboto-medium';
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    color: @gray-icon-color;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__search:after {
+    .icon('\e8b6');
+  }
+  &__view:after {
+    .icon('\e417');
+  }
+
+  &__sort:after {
+    .icon('\e164');
+  }
+}
+
+.filters {
+  background-color: rgba(246, 249, 255, 0.363);
+  border-top: solid 1px rgba(209, 221, 233, 0.411);
+}
+
+.activeIcon {
+  color: @primary-color;
+}
+
+.loader {
+  margin-top: 30px;
+}
+
+.modal-actions {
+  .modal-actions-container;
+
+  &__primary,
+  &__secondary {
+    .modal-actions-buttons;
+  }
+
+  &__secondary {
+    font-family: 'roboto-medium';
+  }
+}
+
+.notFound {
+  .notFound;
+}
