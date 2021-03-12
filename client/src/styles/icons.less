@@ -1,0 +1,34 @@
+// transform: rotate(0.03deg) is used otherwise icons appear pixilated
+
+.icon(@content) {
+  content: @content;
+  font-family: 'Material Icons';
+  transform: rotate(0.03deg);
+}
+
+.settings-icon-before {
+  content: '\e8b8';
+  font-family: 'Material Icons';
+  color: transparent;
+  transform: rotate(0.03deg);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: @primary-color;
+}
+
+.back-icon-before {
+  .zetta;
+  content: '\e314';
+  font-family: 'Material Icons';
+  color: @black-text-color;
+  transform: rotate(0.03deg);
+}
+
+.thumb-icon-before {
+  .tera;
+  content: '\e8dc';
+  font-family: 'Material Icons';
+  color: transparent;
+  transform: rotate(0.03deg);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: @primary-color;
+}
