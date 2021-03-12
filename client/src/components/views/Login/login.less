@@ -1,0 +1,29 @@
+@import (reference) '../../../styles/index.less';
+
+.form {
+  padding: @size-4;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, max-content) 1fr;
+}
+
+.company {
+  color: @primary-color;
+  font-family: 'roboto-medium';
+  text-transform: uppercase;
+  margin-bottom: @size-4;
+}
+
+.title {
+  color: @light-black-text-color;
+  margin-bottom: @size-4;
+}
+
+.submit {
+  .pad-tb-3;
+  .pad-lr-7;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: @size-5;
+}
