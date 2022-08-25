@@ -1,5 +1,5 @@
 # Jodo
-Preview of progress (colors not accurate):
+Preview (some colors may not be accurate):
 
 ![Alt Text](https://github.com/athy125/Jodo/blob/master/preview.gif)
 
