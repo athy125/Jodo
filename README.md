@@ -9,8 +9,7 @@ Back end - Progress: Complete.
 Back end NodeJs REST API server is complete. Handles authentication, authroization, validation, errors, email verification,
 fulltext searching, security and effeciently uses Promise.all.
 
-Front end - Progress: Completed all view components. Nearing app completion. Fine tuning still needed.
-
+Front end - Progress: Completed all view components.
 API Endpoints v1
 
 | Method | Endpoint                                           | Description                                                                       |
